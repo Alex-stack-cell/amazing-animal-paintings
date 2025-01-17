@@ -3,9 +3,10 @@ import { OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { Product } from '../../models/product';
 import { CommonModule } from '@angular/common';
+import { MatCardModule } from '@angular/material/card';
 @Component({
   selector: 'app-product-list',
-  imports: [CommonModule],
+  imports: [CommonModule, MatCardModule],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
 })
